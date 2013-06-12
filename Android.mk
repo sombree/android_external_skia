@@ -532,7 +532,7 @@ LOCAL_STATIC_LIBRARIES := \
 	libgif \
 	libsfntly
 
-ifeq ($(TARGET_HAVE_QC_PERF),true)
+ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 	LOCAL_WHOLE_STATIC_LIBRARIES += libqc-skia
 endif
 
