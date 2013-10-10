@@ -167,7 +167,7 @@ public:
     SkARGB32_Shader_Blitter(const SkBitmap& device, const SkPaint& paint,
                             SkShader::Context* shaderContext);
     virtual ~SkARGB32_Shader_Blitter();
-    virtual void blitH(int x, int y, int width) SK_OVERRIDE QC_WEAK;
+    virtual void blitH(int x, int y, int width) SK_OVERRIDE __attribute__((weak));
     virtual void blitV(int x, int y, int height, SkAlpha alpha) SK_OVERRIDE;
     virtual void blitRect(int x, int y, int width, int height) SK_OVERRIDE QC_WEAK;
     virtual void blitAntiH(int x, int y, const SkAlpha[], const int16_t[]) SK_OVERRIDE;

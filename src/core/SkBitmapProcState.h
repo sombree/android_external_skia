@@ -143,8 +143,8 @@ struct SkBitmapProcState {
     SampleProc16 getSampleProc16() const { return fSampleProc16; }
 
     /* Perform rectaingle geometry specific setup/cleanup */
-    void beginRect(int x, int y, int width) QC_WEAK;
-    void endRect() QC_WEAK;
+    void beginRect(int x, int y, int width) __attribute__((weak));
+    void endRect() __attribute__((weak));
     void *              fOptPtr;
 
 private:
